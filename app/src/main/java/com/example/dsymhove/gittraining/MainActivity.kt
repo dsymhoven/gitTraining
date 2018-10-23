@@ -9,7 +9,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        sayHello()
         sayPickaboo()
+    }
+
+    private fun sayHello() {
+        Log.d("MainActivity", "Hello you")
     }
 
     private fun sayPickaboo() {
